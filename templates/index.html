@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Stroke Prediction</title>
+</head>
+<body>
+    <h1>Brain Stroke Prediction</h1>
+    <form action="/predict" method="POST">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+        </select><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" step="0.01" required><br>
+
+        <label for="hypertension">Hypertension (Yes = 1, No = 0):</label>
+        <select id="hypertension" name="hypertension">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="heart_disease">Heart Disease (Yes = 1, No = 0):</label>
+        <select id="heart_disease" name="heart_disease">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="ever_married">Ever Married:</label>
+        <select id="ever_married" name="ever_married">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br>
+
+        <label for="work_type">Work Type:</label>
+        <select id="work_type" name="work_type">
+            <option value="0">Govt_job</option>
+            <option value="1">Private</option>
+            <option value="2">Self-employed</option>
+            <option value="3">children</option>
+        </select><br>
+
+        <label for="residence_type">Residence Type:</label>
+        <select id="residence_type" name="residence_type">
+            <option value="0">Rural</option>
+            <option value="1">Urban</option>
+        </select><br>
+
+        <label for="avg_glucose_level">Average Glucose Level:</label>
+        <input type="number" id="avg_glucose_level" name="avg_glucose_level" step="0.01" required><br>
+
+        <label for="bmi">BMI:</label>
+        <input type="number" id="bmi" name="bmi" step="0.01" required><br>
+
+        <label for="smoking_status">Smoking Status:</label>
+        <select id="smoking_status" name="smoking_status">
+            <option value="0">Unknown</option>
+            <option value="1">formerly smoked</option>
+            <option value="2">never smoked</option>
+            <option value="3">smokes</option>
+        </select><br>
+
+        <input type="submit" value="Submit for Prediction">
+    </form>
+</body>
+</html>
